@@ -54,7 +54,7 @@ memebtn.onclick = function(){
         randJoke.appendChild(memeContainer)
 
         let memeName = document.createElement("p")
-        memeName.innerHTML = memeJSON.data.memes[randNum].name
+        memeName.innerHTML = memeJSON.data.memes[randNum]
         
         memeContainer.appendChild(memeName)
         let memeImg = document.createElement("img");
