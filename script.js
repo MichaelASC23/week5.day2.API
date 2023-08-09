@@ -54,11 +54,11 @@ memebtn.onclick = function(){
         randJoke.appendChild(memeContainer)
 
         let memeName = document.createElement("p")
-        memeName.innerHTML = memeJSON.data.memes[randNum]
+        memeName.innerHTML = memeJSON.data.memes[randNum].name;
         
         memeContainer.appendChild(memeName)
         let memeImg = document.createElement("img");
-        memeImg.src = memeJSON.data.memes[randNum].url
+        memeImg.src = memeJSON.data.memes[randNum].url;
         memeContainer.appendChild(memeImg);
     })
 }
